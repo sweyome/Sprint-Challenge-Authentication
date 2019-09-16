@@ -11,7 +11,7 @@ router.post("/register", (req, res) => {
 
   if (req.body.username && req.body.password) {
     let user = req.body;
-    const hash = bcrypt.hashSync(user.password, 12); // hash the password
+    const hash = bcrypt.hashSync(user.password, 10); // hash the password
     user.password = hash; // reset password as hashed password
 
     Users.addUser(user)
