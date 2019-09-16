@@ -1,3 +1,3 @@
 module.exports = {
-    jwtSecret: process.env.JWT_SECRET || 'padThaiNoodles'
+    jwtSecret: process.env.JWT_SECRET || 'secrets'
 }
